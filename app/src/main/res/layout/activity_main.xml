@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="34dp"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Date Of Birth"
+            android:textStyle="bold"
+            android:textColor="@color/gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Today"
+            android:gravity="end"
+            android:layout_marginEnd="66dp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bdob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00/00/00"
+            android:elevation="45dp"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/arrow"
+            android:background="@android:color/transparent"
+            android:textColor="@color/orange"/>
+
+        <TextView
+            android:id="@+id/cal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:textSize="22sp"/>
+
+        <Button
+            android:id="@+id/btoday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jan 1,2022"
+            android:elevation="45dp"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/arrow"
+            android:background="@android:color/transparent"
+            android:textColor="@color/orange"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_marginTop="20dp"
+        android:layout_marginBottom="35dp"
+        android:orientation="vertical"
+        android:background="@drawable/curve">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/wcurve"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_gravity="end"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textColor="@color/gray"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Years"
+            android:textColor="@color/orange"
+            android:textSize="25dp"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            tools:ignore="InvalidId" />
+
+
+        <TextView
+            android:id="@+id/agemd"
+            android:layout_marginTop="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="      Months   |     Days "
+            android:layout_gravity="center"
+            android:textColor="@color/gray"
+            android:textSize="25dp"
+            />
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/orange"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:layout_marginVertical="3dp"
+            android:layout_marginTop="45dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next Birthday"
+                android:textColor="@color/gray"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ck"
+                android:backgroundTint="@color/orange"
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/nbd"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textColor="@color/gray"
+                android:textSize="25dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/nmd"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Months |    Days"
+                android:textColor="@color/orange"
+                android:textSize="25dp"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="7dp"
+            android:background="@color/orange"/>
+
+
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/ymw"
+            android:layout_marginTop="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="years , months , weeks"
+            android:textSize="20sp"
+            android:textColor="@color/orange"
+            tools:ignore="InvalidId" />
+
+
+        <TextView
+            android:id="@+id/dhm"
+            android:layout_marginTop="9dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="days , hours , minuite"
+            android:textSize="20sp"
+            android:textColor="@color/orange"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
